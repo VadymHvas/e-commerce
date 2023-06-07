@@ -5,8 +5,6 @@ import "./Navbar.css";
 const Navbar = ({order, setOrder}) => {
     const [openCart, setOpenCart] = useState(false)
 
-    const [fillOrder, setFillOrder] = useState(order)
-
     const deleteOrder = (id) => {
         setOrder(order.filter((ord) => ord.id !== id))
     }
@@ -67,7 +65,21 @@ const Navbar = ({order, setOrder}) => {
                     ) : ""}
                 </ul>
                 <div className="header-icon">
-                    <span></span>
+                    <a onClick={() => setOpenCart(!openCart)}>
+                        <img src="images/shopping-cart.png" alt="error" width="30" />
+                    </a>
+                    {openCart ? (
+                        <div className="cart-content">
+                            <div className="cart-header">
+                                <h4>Shopping Cart</h4>
+                            </div>
+                            <div className="cart-body">
+                                <div className="cart-furns">
+                                    {order.length > 0 ? showOrder({order}) : hideOrder()}
+                               </div>
+                            </div>
+                        </div>
+                    ) : ""}
                 </div>
             </nav>
         </header>

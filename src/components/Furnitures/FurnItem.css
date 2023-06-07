@@ -5,8 +5,9 @@
 }
 
 .furn-image img {
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .furn-description {

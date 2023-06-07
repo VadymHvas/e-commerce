@@ -3,14 +3,8 @@ import "./FurnItem.css";
 
 const FurnItem = ({furn, order, setOrder}) => {
     const addToOrder = (item) => {
-        setOrder([...order, item])
-
-        if(order > 3) {
-            console.log("Asd")
-        }
-
-        console.log(item)
-    }
+        setOrder([...order, item]);
+    };
 
     return (
         <div className="furn-item">

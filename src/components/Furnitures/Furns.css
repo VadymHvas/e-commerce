@@ -1,5 +1,7 @@
 .furnitures {
     padding-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .furn-title {
@@ -13,22 +15,18 @@
     display: inline-block;
 }
 
-.furn-title .title::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 70%;
-    margin: 0 20px;
-    left: 0;
-    bottom: 20px;
-    background: gray;
-}
-
 .furn-content {
     padding: 0 5px;
 }
 
 .furns {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 992px) {
+    .furns {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
 }

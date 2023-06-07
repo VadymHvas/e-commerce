@@ -5,7 +5,7 @@ import Furns from './components/Furnitures/Furns';
 import "./components/Main.css";
 
 function App() {
-  const [order, setOrder] = useState([])
+  const [order, setOrder] = useState([]);
 
   const [furns, setFurns] = useState([
     {id: 1, name: "Table",
@@ -14,7 +14,7 @@ function App() {
      desc: "A large closet that can fit a lot of things", price: 560, img: "shaff.jpeg"},
     {id: 3, name: "Computer desk",
      desc: "A computer desk in a minimalist style", price: 215, img: "compTable.jpg"}
-  ])
+  ]);
 
   return (
     <div className="wrapper">
@@ -30,5 +30,3 @@ function App() {
 }
 
 export default App;
-
-// <h1> - sections title

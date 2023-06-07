@@ -2,22 +2,22 @@ import React, {useState} from 'react';
 import "./OrderItem.css";
 
 const OrderItem = ({item, deleteOrder}) => {
-    const [price, setPrice] = useState(item.price)
-    const [countPrice, setCountPrice] = useState(1)
+    const [price, setPrice] = useState(item.price);
+    const [countPrice, setCountPrice] = useState(1);
 
     const addPrice = () => {
-        setPrice(price + item.price)
-        setCountPrice(countPrice + 1)
-    }
+        setPrice(price + item.price);
+        setCountPrice(countPrice + 1);
+    };
 
     const decrementPrice = () => {
-        setPrice(price - item.price)
-        setCountPrice(countPrice - 1)
+        setPrice(price - item.price);
+        setCountPrice(countPrice - 1);
 
         if (countPrice < 2) {
-            deleteOrder(item.id)
-        }
-    }
+            deleteOrder(item.id);
+        };
+    };
 
     return (
         <div className="order-item">
