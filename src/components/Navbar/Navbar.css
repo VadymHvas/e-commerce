@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 30px; 
+    position: fixed;
+    z-index: 10;
+    width: 97%;
+}
+
+.header-logo a {
+    font-weight: 900;
+    font-size: 24px;
+    color: #000;
+}
+
+.menu {
+    display: inline-flex;
+    right: 0;
+}
+
+.menu li {
+    margin-right: 15px;
+    color: #1f1e1e;
+}
+
+.header-icon {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    display: none;
+}
+
+.header-icon::before, .header-icon::after, .header-icon span {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #1f1e1e;
+}
+
+.header-icon::before {
+    content: "";
+    top: 0;
+}
+
+.header-icon span {
+    top: 49%;
+}
+
+.header-icon::after {
+    content: "";
+    bottom: 0;
+}
+
+@media (max-width: 615px) {
+    .menu {
+        display: none;
+    }
+
+    .header-icon {
+        display: block;
+    }
+}
+
+.cart-content {
+    position: absolute;
+    right: 25px;
+    margin-top: 25px;
+    background: #fbf8f8;
+    padding: 0 10px;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.27);
+    z-index: 10;
+    width: 300px;
+}
+
+.cart-header h4 {
+    font-weight: 700;
+    font-size: 19px;
+    position: relative;
+    text-align: center;
+}
+
+.cart-body {
+    margin-top: 5px;
+}
+
+.empty-message {
+    color: gray;
+    font-weight: 600;
+}

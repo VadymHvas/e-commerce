@@ -1,0 +1,37 @@
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+.order-image img {
+    width: 55px;
+    height: 55px;
+}
+
+.order-info {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.order-price {
+    margin-left: 20px;
+    color: green;
+    font-weight: 700;
+}
+
+.order-button {
+    margin-left: 10px;
+}
+
+.order-button img {
+    width: 14px;
+}

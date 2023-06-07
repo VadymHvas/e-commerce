@@ -1,0 +1,33 @@
+.furn-item {
+    margin-right: 15px;
+    padding: 10px;
+    border: 3px solid gray
+}
+
+.furn-image img {
+    width: 350px;
+    height: 300px;
+}
+
+.furn-description {
+    color: gray;
+    width: 65%;
+}
+
+.furn-price {
+    font-weight: 700;
+    color: green;
+}
+
+.furn-button button {
+    border: 2px solid #1e1e1e;
+    background: transparent;
+    color: #1e1e1e;
+    padding: 10px;  
+    cursor: pointer;
+}
+
+.furn-button button:hover {
+    background: #1e1e1e;
+    color: #fff;
+}

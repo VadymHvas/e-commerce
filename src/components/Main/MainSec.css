@@ -1,0 +1,18 @@
+main {
+    padding-top: 30px;
+}
+
+main .container {
+    padding: 0 40px;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+}
+
+.main-image img {
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+}
